@@ -2,7 +2,7 @@ import React, {
   Component
 } from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 
 import LoginPage from './pages/Login';
 import HomePage from './pages/Home';
@@ -16,6 +16,7 @@ class App extends Component {
       <div>
         <Navigation />
         <Route path='/login' component={LoginPage} />
+        <Route path='/signup' component={SignupPage} />
         {/* <HomePage />
         <hr/>
         <LoginPage />
@@ -26,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
