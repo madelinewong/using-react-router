@@ -19,7 +19,6 @@ class App extends Component {
         <Route path='/' exact component={HomePage} />
         <Route path='/login' component={LoginPage} />
         <Route path='/signup' component={SignupPage} />
-        <button onClick={() => history.push('/login')}>Go</button>
       </div>
     );
   }
